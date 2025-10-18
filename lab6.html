@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 6 – JavaScript Basics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <div class="container text-center py-5">
+    <h1 class="fw-bold text-info">Lab 06 – JavaScript Basics</h1>
+    <p class="mb-1 fs-5">Muhammad Muzamil Qamar</p>
+    <p class="text-secondary">FA23-BCS-287 | BS Computer Science</p>
+    <a href="index.html" class="btn btn-info text-white mt-2">⬅ Back to Home</a>
+  </div>
+
+  <!-- Theory -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Objective / Theory</h4>
+        <p>
+          This lab introduces JavaScript basics such as variables, functions, conditionals, and event handling.
+          You will also create small interactive programs and perform input/output operations with users.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 1 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 1 – Display Entered Number</h4>
+        <p>Use JavaScript to take user input and display it when a button is clicked.</p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h3&gt;Enter a number&lt;/h3&gt;
+&lt;input type="number" id="myNumber" value="2"&gt;
+&lt;button onclick="showNumber()"&gt;Try it&lt;/button&gt;
+&lt;p id="demo"&gt;&lt;/p&gt;
+&lt;script&gt;
+function showNumber() {
+  var x = document.getElementById("myNumber").value;
+  document.getElementById("demo").innerHTML = "You entered: " + x;
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <img src="images/lab6_task1_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 6 Task 1 Output">
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 2 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 2 – Display Date and Time</h4>
+        <p>Use JavaScript’s Date object to show the current date and time dynamically.</p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h2&gt;JavaScript Date Example&lt;/h2&gt;
+&lt;button onclick="showDate()"&gt;Show Date&lt;/button&gt;
+&lt;p id="dateArea"&gt;&lt;/p&gt;
+&lt;script&gt;
+function showDate() {
+  let d = new Date();
+  document.getElementById("dateArea").innerHTML = d;
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <img src="images/lab6_task2_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 6 Task 2 Output">
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 3 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 3 – Number Guessing Game</h4>
+        <p>Write JavaScript code to generate a random number and check if the user guessed it correctly.</p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;script&gt;
+function playGame() {
+  var res = Math.round(Math.random()*10);
+  var num = prompt("Enter a number between 0–10", 0);
+  if(num == res)
+    alert("🎉 You won!");
+  else
+    alert("❌ Wrong! The correct number was " + res);
+}
+&lt;/script&gt;
+&lt;button onclick="playGame()"&gt;Play Game&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <img src="images/lab6_task3_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 6 Task 3 Output">
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

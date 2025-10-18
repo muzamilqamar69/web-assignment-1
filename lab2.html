@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 2 – Advanced HTML</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <div class="container text-center py-5">
+    <h1 class="fw-bold text-info">Lab 02 – Advanced HTML</h1>
+    <p class="mb-1 fs-5">Muhammad Muzamil Qamar</p>
+    <p class="text-secondary">FA23-BCS-287 | BS Computer Science</p>
+    <a href="index.html" class="btn btn-info text-white mt-2">⬅ Back to Home</a>
+  </div>
+
+  <!-- Theory -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Objective / Theory</h4>
+        <p>
+          This lab explores more advanced HTML features such as tables, forms,
+          and input controls. These elements are used to organize information
+          and collect user data on webpages.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 1 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 1 – Create a Student Information Table</h4>
+        <p>Design an HTML table to display a list of students with roll numbers and departments.</p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Student Table&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h2&gt;Student Information&lt;/h2&gt;
+  &lt;table border="1" cellpadding="8"&gt;
+    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Roll No&lt;/th&gt;&lt;th&gt;Department&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Muhammad Muzamil Qamar&lt;/td&gt;&lt;td&gt;FA23-BCS-287&lt;/td&gt;&lt;td&gt;BS CS&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Ali Raza&lt;/td&gt;&lt;td&gt;FA23-BCS-110&lt;/td&gt;&lt;td&gt;BS CS&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <p>Add your table output screenshot here.</p>
+        <img src="images/lab2_task1_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 2 Task 1 Output">
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 2 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 2 – Create a Student Registration Form</h4>
+        <p>
+          Build a simple HTML form that asks for a student’s name, email, gender,
+          and course. Use appropriate form elements.
+        </p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Registration Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h2&gt;Student Registration Form&lt;/h2&gt;
+  &lt;form&gt;
+    &lt;label&gt;Full Name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" name="name"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Email Address:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Gender:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="radio" name="gender" value="male"&gt; Male
+    &lt;input type="radio" name="gender" value="female"&gt; Female&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Select Course:&lt;/label&gt;&lt;br&gt;
+    &lt;select name="course"&gt;
+      &lt;option&gt;BS Computer Science&lt;/option&gt;
+      &lt;option&gt;BS Software Engineering&lt;/option&gt;
+      &lt;option&gt;BS Information Technology&lt;/option&gt;
+    &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;input type="submit" value="Register"&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <p>Insert screenshot showing your registration form result.</p>
+        <img src="images/lab2_task2_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 2 Task 2 Output">
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 3 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 3 – HTML Form with Different Input Types</h4>
+        <p>Create another form that uses input types like password, checkbox, and date.</p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Input Types Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h2&gt;Input Type Examples&lt;/h2&gt;
+  &lt;form&gt;
+    &lt;label&gt;Username:&lt;/label&gt;
+    &lt;input type="text" name="user"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Password:&lt;/label&gt;
+    &lt;input type="password" name="pass"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Date of Birth:&lt;/label&gt;
+    &lt;input type="date" name="dob"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;input type="checkbox" name="agree"&gt; I agree to terms and conditions&lt;br&gt;&lt;br&gt;
+
+    &lt;input type="submit" value="Submit Form"&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <p>Insert screenshot showing your form with multiple input types.</p>
+        <img src="images/lab2_task3_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 2 Task 3 Output">
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

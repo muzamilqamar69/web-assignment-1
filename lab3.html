@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 3 – HTML5 Forms and Semantic Elements</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+  <div class="container text-center py-5">
+    <h1 class="fw-bold text-info">Lab 03 – HTML5 Forms and New Semantic Elements</h1>
+    <p class="mb-1 fs-5">Muhammad Muzamil Qamar</p>
+    <p class="text-secondary">FA23-BCS-287 | BS Computer Science</p>
+    <a href="index.html" class="btn btn-info text-white mt-2">⬅ Back to Home</a>
+  </div>
+
+  <!-- Theory -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Objective / Theory</h4>
+        <p>
+          This lab explores HTML5 forms and semantic elements. You will learn to create input fields, 
+          use form attributes, and structure webpages with semantic tags such as &lt;header&gt;, &lt;section&gt;, &lt;article&gt;, and &lt;footer&gt;.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 1 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 1 – Create a Login Form</h4>
+        <p>
+          Make a form with name, password, gender (using radio buttons), and submit/cancel buttons.
+        </p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Get Identity&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;&lt;b&gt;Who are you?&lt;/b&gt;&lt;/p&gt;
+  &lt;form method="post" action=""&gt;
+    &lt;p&gt;Name: &lt;input type="text" name="name"&gt;&lt;/p&gt;
+    &lt;p&gt;Password: &lt;input type="password" name="password"&gt;&lt;/p&gt;
+    &lt;p&gt;Gender:
+      &lt;label&gt;&lt;input type="radio" name="gender" value="m"&gt; Male&lt;/label&gt;
+      &lt;label&gt;&lt;input type="radio" name="gender" value="f"&gt; Female&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;input type="submit" value="Login"&gt;
+    &lt;input type="reset" value="Cancel"&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <img src="images/lab3_task1_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 3 Task 1 Output">
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 2 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 2 – Create a Registration Form</h4>
+        <p>
+          Create a registration form using HTML5 input types such as email, password, and date.
+        </p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form&gt;
+    &lt;h1&gt;Register&lt;/h1&gt;
+    &lt;p&gt;Please fill in this form to create an account.&lt;/p&gt;
+    &lt;hr&gt;
+
+    &lt;label for="email"&gt;&lt;b&gt;Email&lt;/b&gt;&lt;/label&gt;
+    &lt;input type="email" placeholder="Enter Email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="psw"&gt;&lt;b&gt;Password&lt;/b&gt;&lt;/label&gt;
+    &lt;input type="password" placeholder="Enter Password" name="psw" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="dob"&gt;&lt;b&gt;Date of Birth&lt;/b&gt;&lt;/label&gt;
+    &lt;input type="date" name="dob" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;&lt;b&gt;Favorite Color&lt;/b&gt;&lt;/label&gt;
+    &lt;input type="color" name="favcolor"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;p&gt;By creating an account you agree to our &lt;a href="#"&gt;Terms & Privacy&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;button type="submit"&gt;Register&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <img src="images/lab3_task2_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 3 Task 2 Output">
+      </div>
+    </div>
+  </div>
+
+  <!-- Task 3 -->
+  <div class="container mb-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h4 class="text-info mb-3">Task 3 – Using Semantic Elements</h4>
+        <p>Use semantic elements like &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, and &lt;footer&gt; to structure a webpage.</p>
+        <h6 class="mt-4 text-secondary">Code:</h6>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;section&gt;
+    &lt;main&gt;
+      &lt;article&gt;
+        This is the main content of the website.
+      &lt;/article&gt;
+    &lt;/main&gt;
+    &lt;aside&gt;This is some extra sidebar content.&lt;/aside&gt;
+  &lt;/section&gt;
+  &lt;footer&gt;Copyright © 2025&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        <h6 class="mt-4 text-secondary">Output:</h6>
+        <img src="images/lab3_task3_output.jpg" class="img-fluid rounded shadow-sm" alt="Lab 3 Task 3 Output">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
